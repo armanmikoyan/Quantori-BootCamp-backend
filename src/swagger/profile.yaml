@@ -10,13 +10,8 @@ paths:
       tags:
         - Profile
       summary: Get user profile
-      parameters:
-        - in: header
-          name: Authorization
-          required: true
-          schema:
-            type: string
-          description: Bearer token
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: Successful response with user profile
@@ -26,7 +21,7 @@ paths:
                 $ref: '#/components/schemas/UserProfile'
         '401':
           description: Unauthorized access
-          
+
 components:
   schemas:
     UserProfile:
