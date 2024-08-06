@@ -1,2 +1,4 @@
 # Quantori-JS-BootCamp-task
-Back-end
+
+## api documentation through swagger
+http://localhost:<PORT>/api/docs/

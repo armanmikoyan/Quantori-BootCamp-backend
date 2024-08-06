@@ -8,8 +8,7 @@ import { autoRoute } from "./routes/authRoute";
 import { profileRoute } from "./routes/profileRoute";
 
 const app = express();
-const PORT = process.env.PORT || 6666;
-mongoDbStart();
+
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -19,6 +18,9 @@ app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs)); // api doc
 app.use("/", autoRoute); 
 app.use("/", profileRoute); 
 
-app.listen(PORT, () => {
-   console.log(`Server is working on port ${PORT}`);
+mongoDbStart().then(() => {
+   const PORT = process.env.PORT || 6666;
+   app.listen(PORT, () => {
+      console.log(`Server is working on port ${PORT}`);
+   });   
 })
