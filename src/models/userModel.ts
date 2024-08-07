@@ -1,21 +1,30 @@
 import { IUser } from '../interfaces/user';
-import  mongoose, { Schema } from 'mongoose';
+import fs from "fs/promises"
 
-const userSchema: Schema<IUser> = new Schema({
-   username: {
-      type: String,
-      required: true,
-      unique: true,
-   },
-   password: {
-      type: String,
-      required: true,
-   },
-   email: {
-      type: String,
-      required: true,
-      unique: true,
-   },
-});
 
-export const User = mongoose.model<IUser>('User', userSchema);
+class User implements IUser {
+   email: string;
+   username: string;
+   password: string;
+
+   constructor(email: string, username: string, password: string) {
+      this.email = email;
+      this.username = username;
+      this.password = password;
+   }
+
+   static async find(email: string): Promise<IUser | null> {
+      const pathToDb = process.cwd() + '/src/databases/data.json';
+      const data = await fs.readFile(pathToDb, "utf8");
+      const jsonData = JSON.parse(data);
+      for(const user of jsonData) {
+         if (user.email == email) {
+            return user;
+         }
+      }
+      return null;
+   }
+};
+
+
+export default User; 

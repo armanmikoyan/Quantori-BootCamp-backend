@@ -5,7 +5,7 @@ interface IUserDto {
   username: string;
 };
 
-interface IUser extends IUserDto, Document {
+interface IUser extends IUserDto {
   password: string;
 };
 

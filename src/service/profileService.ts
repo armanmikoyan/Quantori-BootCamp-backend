@@ -1,11 +1,11 @@
 import { UnexpectedError, UserNotFoundError } from "../errors/appError";
-import { User } from "../models/userModel";
 import { IUserDto } from "../interfaces/user"
+import User from "../models/userModel";
 
 export class ProfileService {
    async getProfileInfo(email: string): Promise<IUserDto> {
       try {
-         const user = await User.findOne({ email });
+         const user = await User.find(email);
          if (!user) throw new UserNotFoundError;
 
          const info: IUserDto = {
@@ -20,4 +20,4 @@ export class ProfileService {
          throw new UnexpectedError(error.message);
       }
    };
-};
+ };

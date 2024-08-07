@@ -3,6 +3,6 @@ import { AuthController } from "../controllers/authController";
 import loginValidator from "../middlewares/loginValidatorMiddleware"
 
 const controller = new AuthController();
-export const autoRoute = Router();
+export const authRoute = Router();
 
-autoRoute.post("/login", loginValidator.validate, controller.login);
+authRoute.post("/login", loginValidator.validate, controller.login);

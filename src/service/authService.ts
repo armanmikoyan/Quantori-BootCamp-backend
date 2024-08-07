@@ -1,13 +1,12 @@
 import { UnexpectedError, UserNotFoundError } from "../errors/appError";
-import { User } from "../models/userModel";
+import User from "../models/userModel";
 import jwt from 'jsonwebtoken';
 
 export class AuthService {
    async login(email: string, password: string): Promise<string> {
       try {
-         const user = await User.findOne({ email });
+         const user = await User.find(email);
          if (!user || user.password != password) throw new UserNotFoundError;
-
          const accessToken = this.generateAccessToken(email);
          return accessToken;
       } catch (error: any) {
