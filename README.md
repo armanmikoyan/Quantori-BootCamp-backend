@@ -37,13 +37,13 @@ password: Arman111
 
 ##
 ## 2
-"email": "MikeTyson@box.com".  
-"username": "tyson".  
-"password": "mike"     
+"email": MikeTyson@box.com.  
+"username": tyson.  
+"password": mike    
 
 ## 
 ## 3
-"email": "JamesBond@gmail.com"   
-"username": "007"  
-"password": "--->"
+"email": JamesBond@gmail.com   
+"username": 007  
+"password": --->
 
