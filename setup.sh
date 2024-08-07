@@ -2,11 +2,13 @@
 
 set -e
 
-if [ ! -f .env ]; then
+if [ -f .env ]; then
+    echo ".env file already exists. Overriding..."
+    cp .env.example .env
+    echo ".env file has been overridden from .env.example"
+else
     cp .env.example .env
     echo ".env file created from .env.example"
-else
-    echo ".env file already exists"
 fi
 
 echo "Installing dependencies..."
