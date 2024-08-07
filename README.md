@@ -29,20 +29,20 @@
 # Test Users
 
 ##
-## 1 
+## 
 email: arman.mikoyan1@gmail.com  
 username: armanmikoyan  
 password: Arman111
 
 
 ##
-## 2
+## 
 "email": MikeTyson@box.com.  
 "username": tyson.  
 "password": mike    
 
 ## 
-## 3
+## 
 "email": JamesBond@gmail.com   
 "username": 007  
 "password": --->
