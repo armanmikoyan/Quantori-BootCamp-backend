@@ -1,5 +1,3 @@
-import { Document } from 'mongoose';
-
 interface IUserDto {
   email: string;
   username: string;
