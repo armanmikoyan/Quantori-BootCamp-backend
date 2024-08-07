@@ -1,6 +1,6 @@
 {
    "watch": ["src"],
-   "ext": "ts, yaml" ,
+   "ext": "ts, yaml",
    "exec": "npx ts-node  src/index.ts"
 }
  
