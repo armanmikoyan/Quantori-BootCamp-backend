@@ -38,7 +38,7 @@ password: Arman111
 ##
 ## 
 "email": MikeTyson@box.com.  
-"username": tyson.  
+"username": tyson  
 "password": mike    
 
 ## 
