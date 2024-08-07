@@ -14,3 +14,11 @@
 
 ## 4. Run app
     ./run.sh
+
+# API Testing
+
+##### Specify port <here>, where is running app
+http://localhost:<PORT>/api/docs/
+
+#### Alternatively, you can use Postman to test the API endpoints. Import the API collection into Postman to start testing.
+
