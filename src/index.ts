@@ -3,11 +3,11 @@ import swaggerSpecs from "./swagger/config";
 import swaggerUi from "swagger-ui-express";
 import bodyParser from 'body-parser';
 import cors from "cors"
-import { authRoute } from "./routes/authRoute";
-import { profileRoute } from "./routes/profileRoute";
 import dotenv from "dotenv"
-dotenv.config();
+import { profileRoute } from "./routes/profileRoute";
+import { authRoute } from "./routes/authRoute";
 
+dotenv.config();
 const app = express();
 
 app.use(express.json());
