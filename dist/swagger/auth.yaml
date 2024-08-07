@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Login API
+  description: API documentation for user authentication
+  version: 1.0.0
+
+paths:
+  /login:
+    post:
+      tags:
+        - Login
+      summary: get access token 
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Successfull login
+        '403':
+          description: Validation error
+
+components:
+  schemas:
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          example: arman.mikoyan1@gmail.com
+        password:
+          type: string
+          example: Arman111

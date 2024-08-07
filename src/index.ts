@@ -21,4 +21,5 @@ app.use("/", profileRoute);
 const PORT = process.env.PORT || 6666;
 app.listen(PORT, () => {
    console.log(`Server is working on port ${PORT}`);
+   console.log(`Swagger is avalable in url http://localhost:${PORT}/api/docs/`);
 });   
