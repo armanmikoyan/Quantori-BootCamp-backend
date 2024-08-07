@@ -14,3 +14,4 @@ Open your terminal and navigate to the project directory. Then, run the followin
    
 ## 4. Run app
     ```bash
+    ./run.sh
