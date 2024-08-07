@@ -11,7 +11,7 @@ else
     echo ".env file created from .env.example"
 fi
 
-echo "Installing dependencies..."
+echo "Installing dependencies... "
 npm install
 
 echo "Setup complete!"
