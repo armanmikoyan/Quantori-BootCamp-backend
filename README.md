@@ -19,7 +19,7 @@
 
 ## Swagger UI
 ##### If you changed the port in .env file, you need to change the port after " : ", 
-##### swagger url http://localhost:5555/api/docs/
+##### swagger url http://localhost:9999/api/docs/
 
 ## Alternatively, you can use Postman to test the API endpoints.
 
