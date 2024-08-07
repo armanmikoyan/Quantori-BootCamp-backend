@@ -21,5 +21,5 @@
 ##### If you changed the port in .env file, you need to change the port after " : ", 
 ##### swagger url http://localhost:5555/api/docs/
 
-#### Alternatively, you can use Postman to test the API endpoints. Import the API collection into Postman to start testing.
+## Alternatively, you can use Postman to test the API endpoints.
 
