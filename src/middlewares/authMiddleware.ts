@@ -18,9 +18,9 @@ export const checkUserAuthentification = (req: Request, res: Response, next: Nex
       });    
    } catch(error: any) {
       if (error instanceof AccessTokenError) {
-         res.status(error.statusCode).json({ error: error.message })  
+         res.status(error.statusCode).json({ error: error.message });  
       } else {
-         res.status(500).json({ error: error.message })  
+         res.status(500).json({ error: error.message }); 
       }
    }
 };

@@ -1,6 +1,5 @@
-import { IUser } from '../interfaces/user';
 import fs from "fs/promises"
-
+import { IUser } from '../interfaces/user';
 
 class User implements IUser {
    email: string;

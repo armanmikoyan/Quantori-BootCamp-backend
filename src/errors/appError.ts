@@ -28,5 +28,5 @@ class UnexpectedError extends AppError {
 export {
    UserNotFoundError,
    AccessTokenError,
-   UnexpectedError
+   UnexpectedError,
 };

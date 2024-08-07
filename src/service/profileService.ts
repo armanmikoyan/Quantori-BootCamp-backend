@@ -1,6 +1,6 @@
+import User from "../models/userModel";
 import { UnexpectedError, UserNotFoundError } from "../errors/appError";
 import { IUserDto } from "../interfaces/user"
-import User from "../models/userModel";
 
 export class ProfileService {
    async getProfileInfo(email: string): Promise<IUserDto> {

@@ -1,6 +1,6 @@
-import { UnexpectedError, UserNotFoundError } from "../errors/appError";
 import User from "../models/userModel";
 import jwt from 'jsonwebtoken';
+import { UnexpectedError, UserNotFoundError } from "../errors/appError";
 
 export class AuthService {
    async login(email: string, password: string): Promise<string> {

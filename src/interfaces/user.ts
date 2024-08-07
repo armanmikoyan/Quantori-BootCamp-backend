@@ -11,5 +11,5 @@ interface IUser extends IUserDto {
 
 export {
   IUserDto, 
-  IUser
+  IUser,
 };
