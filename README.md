@@ -1,6 +1,6 @@
 # Quantori-bootcamp-backend
 
-## 0. Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
+#### 0. Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
 
 ## 1. Set Permissions
     chmod +x setup.sh
