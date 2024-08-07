@@ -9,12 +9,6 @@ const options = {
          version: '1.0.0',
          description: "Endpoint explanation",
       },
-      servers: [
-         {
-         url: `http://localhost:${process.env.PORT || 6666}`,
-         description: 'Local server',
-         },
-      ],
       components: {
          securitySchemes: {
             bearerAuth: {  
