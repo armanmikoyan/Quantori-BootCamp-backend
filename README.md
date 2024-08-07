@@ -17,8 +17,8 @@
 
 # API Testing
 
-##### Specify port <here>, where is running app
-http://localhost:<PORT>/api/docs/
+## Swagger UI
+##### If you changed port in .env you need to change port after " : " http://localhost:5555/api/docs/
 
 #### Alternatively, you can use Postman to test the API endpoints. Import the API collection into Postman to start testing.
 
