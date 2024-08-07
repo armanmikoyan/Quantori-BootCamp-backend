@@ -2,6 +2,8 @@
 
 ##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
 
+# For Unix-based systems, run:
+
 ## 1. Set Permissions
     chmod +x setup.sh && chmod +x run.sh
 
