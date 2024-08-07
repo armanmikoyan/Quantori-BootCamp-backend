@@ -1,25 +1,18 @@
-# Project Name
+# Quantori-bootcamp-backend
 
-## Overview
+Open your terminal and navigate to the project directory. Then, run the following commands
 
-This project is a Node.js application that includes a setup script and a run script. Follow the instructions below to set up and run the application.
+   ## 1. Set Permissions
+      ```bash
+      chmod +x setup.sh
+      chmod +x run.sh
 
-## Prerequisites
+## 2. Setup project
+    ```bash
+    ./setup.sh
 
-Make sure you have the following installed:
-- Node.js
-- npm (Node Package Manager)
+    2.1 Set prefered port inside .env file (optional)
 
-## Getting Started
-
-### 1. Set Permissions
-
-Before running the scripts, you need to set the appropriate permissions. Open your terminal and navigate to the project directory. Then, run the following commands to grant execution permissions to the `setup.sh` and `run.sh` scripts:
-
-```bash
-chmod +x setup.sh
-chmod +x run.sh
-
-./setup.sh
-./run.sh
-
+## 3. Run app
+    ```bash
+    ./run.sh
