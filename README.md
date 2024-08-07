@@ -1,6 +1,6 @@
 # Quantori-bootcamp-backend
 
-Open your terminal and navigate to the project directory. Then, run the following commands
+Open your terminal and navigate to the project root directory. Then, run the following commands
 
 ## 1. Set Permissions
     ```bash
