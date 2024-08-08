@@ -1,22 +1,17 @@
 # Quantori-bootcamp-backend
 
-##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
+##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following command
 
-## 1. Set Permissions
-    chmod +x setup.sh && chmod +x run.sh
 
-## 2. Setup project
-    ./setup.sh
+## 1. Change PORT inside .env.example file (optional) 
 
-## 3. Change PORT inside .env file (optional) 
-
-## 4. Run app
+## 2. Run bash script
     ./run.sh
 
 # API Testing
 
 ## Swagger UI
-##### If you changed the port in .env file, you need to change the port after " : ", 
+##### If you changed the port in .env.example file, you need to change the port after " : ", 
 ##### swagger url http://localhost:9999/api/docs/
 
 ## Alternatively, you can use Postman to test the API endpoints.
