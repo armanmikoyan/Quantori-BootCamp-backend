@@ -12,7 +12,7 @@
 
 ## 2. Run without docker
 #### if you dont have running docker desktop
-    ./run-without-docker.sh
+    chmod +x run-without-docker.sh && ./run-without-docker.sh
 
 # API Testing
 
