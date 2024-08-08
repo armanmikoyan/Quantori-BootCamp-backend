@@ -4,13 +4,13 @@
 
 # For unix-based systems
 
-#### 1. Change PORT inside .env.example file (optional) 
+#### Change PORT inside .env.example file (optional) 
 
-## 2. Run via docker 
+## Run via docker 
 #### you need to have running docker desktop
     ./run-via-docker.sh
 
-## 2. Run without docker
+## Run without docker
 #### if you dont have running docker desktop
     chmod +x run-without-docker.sh && ./run-without-docker.sh
 
