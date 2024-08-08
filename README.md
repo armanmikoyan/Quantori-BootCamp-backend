@@ -1,6 +1,6 @@
 # Quantori-bootcamp-backend
 
-##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following command
+##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
 
 
 ## 1. Change PORT inside .env.example file (optional) 
