@@ -2,15 +2,16 @@
 
 ##### Clone repository. Open your terminal and navigate to the project root directory. Then, run the following commands
 
+# For unix-based systems
 
-## 1. Change PORT inside .env.example file (optional) 
+#### 1. Change PORT inside .env.example file (optional) 
 
 ## 2. Run via docker 
-### you need to have running docker desktop
+#### you need to have running docker desktop
     ./run-via-docker.sh
 
 ## 2. Run without docker
-### if you dont have running docker desktop
+#### if you dont have running docker desktop
     ./run-without-docker.sh
 
 # API Testing
