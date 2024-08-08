@@ -8,7 +8,7 @@ if [ -f .env ]; then
     echo ".env file has been overridden from .env.example"
 else
     cp .env.example .env
-    echo ".env file created from .env.example"
+    echo ".env file created from .env.example "
 fi
 
 echo "Installing dependencies... "
