@@ -3,6 +3,7 @@
 set -e
 
 cp .env.example .env
+npm install
 
 export $(grep -v '^#' .env | xargs)
 
