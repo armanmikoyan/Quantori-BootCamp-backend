@@ -5,8 +5,13 @@
 
 ## 1. Change PORT inside .env.example file (optional) 
 
-## 2. Run bash script
-    ./run.sh
+## 2. Run via docker 
+### you need to have running docker desktop
+    ./run-via-docker.sh
+
+## 2. Run without docker
+### if you dont have running docker desktop
+    ./run-without-docker.sh
 
 # API Testing
 
