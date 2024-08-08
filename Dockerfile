@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN chmod +x run.sh
+RUN chmod +x run-via-docker.sh
 RUN npm run build
 RUN npm run postbuild
 EXPOSE 6666 
