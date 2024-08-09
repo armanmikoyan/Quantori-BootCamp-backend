@@ -5,6 +5,7 @@
   "description": "Back-end",
   "main": "index.js",
   "scripts": {
+    "test": "ts-node src/tests/unit/all.test.ts",
     "start": "node dist/index.js",
     "build": "tsc",
     "postbuild": "cp -r src/swagger/*.yaml dist/swagger/.",
@@ -19,6 +20,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^3.3.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
@@ -32,6 +34,5 @@
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
-    
   }
 }
