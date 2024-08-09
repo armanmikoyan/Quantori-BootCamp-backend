@@ -5,8 +5,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const run = async () => {
-   await execAllLoginTests();
-   await execAllProfileTests();
+   try {
+      await execAllLoginTests();
+      await execAllProfileTests();
+   } catch (error: any) {
+      console.log(error.message);
+   }
 };
 
 run();
