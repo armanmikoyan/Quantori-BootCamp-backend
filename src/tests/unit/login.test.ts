@@ -14,8 +14,7 @@ async function request(reqBody: any) {
    } catch (error: any) {
       throw error;
    }
-}
-
+};
 
 async function test1() {
    const correctReqBody = {
@@ -30,7 +29,6 @@ async function test1() {
       console.error(`${test1.name} is failed. Expected: ${error.message}`);
    }
 };
-
 
 async function test2() {
    const wrongReqBody = {
@@ -58,7 +56,7 @@ async function test3() {
    } catch (error: any) {
       console.error(`${test3.name} is failed. Expected: ${error.message}`);
    }
-}
+};
 
 async function test4() {
    const wrongReqBody = {
@@ -83,7 +81,7 @@ async function test5() {
    } catch (error: any) {
       console.error(`${test5.name} is failed. Expected: ${error.message}`);
    }
-}
+};
 
 export default async function execAllLoginTests() {
    await test1();
