@@ -8,11 +8,11 @@
 
 ## Run via docker 
 #### you need to have running docker desktop
-    ./run-via-docker.sh
+    sh run-via-docker.sh
 
 ## Run without docker
 #### if you dont have running docker desktop
-    chmod +x run-without-docker.sh && ./run-without-docker.sh
+    sh run-without-docker.sh
 
 # API Testing
 
